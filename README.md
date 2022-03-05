@@ -21,6 +21,9 @@ Existe dos .env uno para el docker-compose y otro propio de laravel
     $ exit
 7. El proyecto se encuentra corriendo en la direccion web : http://www.varesdev.xyz 
 
+8. Es necesario dar permisos a la carpeta storage. Desde la raiz del proyecto ingresar a src
+y digitar:
+    $ chmod -R 775 storage
 <h1>Nota 1: </h1> El registro de usuarios lo tengo deshabilitado en la direccion web. Se habilita en config/fortify.php, descomentarear  "Features::registration(),"
 <h1>Nota 2: </h1> El comando schedule:work esta trabajando cada seis horas en la direccion web
 <h1>Nota 3: </h1> En productos, sirve el crud (Crear, eliminar, modificar, ver) y en peticiones se creo solo el crear y eliminar
