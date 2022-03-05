@@ -18,7 +18,8 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')->hourly();
         //$schedule->command('schedule:work')->cron('* * * * *');
         //$schedule->command('schedule:work')->everyMinute();
-        $schedule->command('schedule:work')->everySixHours();
+        $schedule->command('schedule:work')->everyTwoMinutes();
+        //$schedule->command('schedule:work')->everySixHours();
     }
 
     /**
